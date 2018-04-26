@@ -7,6 +7,10 @@ import iView from 'iview'
 import 'iview/dist/styles/iview.css'
 import Vuex from 'vuex'
 import store from './store/store'
+import Axios from 'axios'
+
+Vue.prototype.$axios = Axios;
+Vue.prototype.HOME = '/api';
 
 Vue.use(iView)
 Vue.use(Vuex)
